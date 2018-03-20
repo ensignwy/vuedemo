@@ -1,12 +1,22 @@
 module.exports = {
+  $router: 'router1',
+  '/user': {
+    '$get': function (req, res, next) {
+      res.json({
+        code: 0,
+        msg: 'ok',
+        data: 'æˆ‘æ˜¯mockçš„æ•°æ®'
+      });
+    },
+    '$post': function (req, res, next) {
+      res.json({
+        test: 'ok'
+      });
 
-  // ½Ó¿ÚµØÖ·
-  api: '/api/hello',
-
-  // ·µ»ØÊı¾İ ²Î¿¼http://expressjs.com/zh-cn/4x/api.html
-  response: function (req, res) {
-    res.send(`
-      <p>hello vue!</p>
-    `);
-  }
-}
+    }
+  },
+  '/userName': {
+    name: 'test'
+  },
+  '/text': 'test'
+};

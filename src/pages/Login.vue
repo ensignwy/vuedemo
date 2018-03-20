@@ -5,13 +5,34 @@
 				<el-input v-model="username"/>
 			</el-form-item>
 			<el-form-item label="密码">
-				<el-input v-model="password"/>
+				<el-input type="password" v-model="password"/>
 			</el-form-item>
 			<el-button type="primary" @click="login">登陆</el-button>
 		</el-form>
-		
+
 	</div>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        msg: 'mock'
+      }
+    },
+    created() {
+
+    },
+    methods:{
+      login:function () {
+        console.log('login')
+        this.$router.push({ path: '/communication' })
+      }
+    }
+  }
+</script>
+
+
 <style scoped>
 .login-container{
 

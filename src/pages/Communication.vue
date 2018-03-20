@@ -9,7 +9,7 @@
         autofocus
         autocomplete="off"
         placeholder="What needs to be done?"
-        @keyup.enter="addTodo">
+        @keyup.enter="addTodo" style="ime-mode:active">
     </header>
     <!-- main section -->
     <section class="main" v-show="todos.length">

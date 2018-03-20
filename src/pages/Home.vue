@@ -3,27 +3,27 @@
     <ul class="Menu1 clear">
       <li>
         <router-link to="login" class="el-button el-button-info">
-          <span>登陆</span> 
+          <span>登陆</span>
         </router-link>
       </li>
       <li>
         <router-link to="communication" class="el-button el-button-info">
-          <span>跨组件通信</span> 
+          <span>跨组件通信</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="getData" class="el-button el-button-info">
+          <span>mock模拟数据</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="tantan" class="el-button el-button-info">
+          <span>探探层叠滑动</span>
         </router-link>
       </li>
       <li>
         <router-link to="login" class="el-button el-button-info">
-          <span>登陆</span> 
-        </router-link>
-      </li>
-      <li>
-        <router-link to="login" class="el-button el-button-info">
-          <span>登陆</span> 
-        </router-link>
-      </li>
-      <li>
-        <router-link to="login" class="el-button el-button-info">
-          <span>登陆</span> 
+          <span>登陆</span>
         </router-link>
       </li>
     </ul>
@@ -67,15 +67,15 @@ a {
     background: #e5e9f2;
   }
   .grid-content {
-   
+
     min-height: 80px;
   }
-  
+
   .row-bg {
     padding: 10px 0;
     background-color: #f9fafc;
   }
-  
+
   .Menu1>li{
     float: left;
   }
