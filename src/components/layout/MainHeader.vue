@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="logo" :class="collapsed?'logo-collapse-width':'logo-width'">{{collapsed?'':'后台管理系统'}}</div>
+    <div class="logo" :class="collapsed?'logo-collapse-width':'logo-width'">{{collapsed?'&nbsp;':'后台管理系统'}}</div>
     <div class="tools" @click.prevent="collapse">
       <i class="el-icon-minus"></i>
     </div>
@@ -24,6 +24,7 @@
     data () {
       return {
         name: 'ensign',
+        collapsed:false
       }
     },
     computed: {

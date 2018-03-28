@@ -5,9 +5,9 @@ import Login from '@/pages/Login'
 import Communication from '@/pages/Communication'
 import GetData from '@/pages/GetData'
 import Tantan from '@/pages/Tantan'
-import ManageHome from '@/components/layout/ManageHome'
+import AdminHome from '@/components/layout/ManageHome'
 import NotFound from '@/components/layout/NotFound'
-import Index from '@/pages/manage/Index'
+import Index from '@/pages/admin/Index'
 
 Vue.use(Router)
 let routes = [
@@ -42,9 +42,9 @@ let routes = [
     component: Tantan
   },
   {
-    path: '/manage',
-    name: 'ManageHome',
-    component: ManageHome,
+    path: '/admin',
+    name: 'AdminHome',
+    component: AdminHome,
     children: [
       {
         path: '',

@@ -22,7 +22,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="manage" class="el-button el-button-info">
+        <router-link to="admin" class="el-button el-button-info">
           <span>后台管理</span>
         </router-link>
       </li>
