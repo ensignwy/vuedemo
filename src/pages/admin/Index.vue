@@ -5,14 +5,15 @@
 </template>
 
 <script>
+  import http from '../../http'
+
   export default {
     data () {
       return {
         msg: 'mock'
       }
     },
-    created() {
-
+    created () {
     },
 
   }

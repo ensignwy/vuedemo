@@ -20,11 +20,12 @@
 </template>
 <script>
   import Bus from './bus'
+
   export default {
     data () {
       return {
         name: 'ensign',
-        collapsed:false
+        collapsed: false
       }
     },
     computed: {
@@ -48,10 +49,10 @@
 
       },
       // 折叠导航栏
-      collapse:function () {
+      collapse: function () {
         this.collapsed = !this.collapsed
         // 触发事件，传递数据
-        Bus.$emit('collapsed',this.collapsed)
+        Bus.$emit('collapsed', this.collapsed)
       }
     }
   }
@@ -89,24 +90,29 @@
     cursor: pointer;
     color: #fff;
   }
-  .tools{
+
+  .tools {
     float: left;
     width: 50px;
     cursor: pointer;
   }
+
   /*左侧aside折叠后的宽度*/
-  .logo-collapse-width{
+  .logo-collapse-width {
     width: 60px;
   }
+
   /*左侧aside展开的宽度*/
-  .logo-width{
+  .logo-width {
     width: 206px;
   }
+
   /*菜单折叠和展开*/
-  .menu-collapsed{
+  .menu-collapsed {
     width: 60px;
   }
-  .menu-expended{
+
+  .menu-expended {
     width: 206px;
   }
 

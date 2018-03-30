@@ -11,9 +11,6 @@ let API_ROOT = '/api/v1'
 let API_URL = HOST + API_ROOT
 
 module.exports = function () {
-  app.use(API_URL+'/menu',express.static('../mock/menu.json'))
-  app.post(API_URL + '/api2', function (req, res) {
-    res.send(require('../mock/db.json'))
-  })
+
 }
 
