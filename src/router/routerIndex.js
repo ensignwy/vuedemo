@@ -1,13 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/Home'
-import Login from '@/pages/Login'
-import Communication from '@/pages/Communication'
-import GetData from '@/pages/GetData'
-import Tantan from '@/pages/Tantan'
-import AdminHome from '@/components/layout/ManageHome'
+import Home from '@/modules/index/views/Home'
+import Login from '@/modules/index/views/Login'
+import Communication from '@/modules/index/views/Communication'
+import GetData from '@/modules/index/views/GetData'
+import Tantan from '@/modules/index/views/Tantan'
 import NotFound from '@/components/layout/NotFound'
-import Index from '@/pages/admin/Index'
 
 Vue.use(Router)
 let routes = [
@@ -40,20 +38,7 @@ let routes = [
     path: '/tantan',
     name: 'Tantan',
     component: Tantan
-  },
-  {
-    path: '/admin',
-    name: 'AdminHome',
-    component: AdminHome,
-    children: [
-      {
-        path: '',
-        component: Index
-      }
-    ]
-  },
-  // 将404页面配置在最后面，路由是按照顺序匹配的，以后面的为准
-  {path: '/*', component: NotFound}
+  }
 ]
 const router = new Router({
   history: true,

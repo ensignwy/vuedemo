@@ -20,11 +20,15 @@ const createLintingRule = () => ({
   }
 })
 
+var entries =  utils.getMultiEntry('./src/'+config.moduleName+'/**/*.js'); // 获得入口js文件
+
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  entry: {
-    app: ['babel-polyfill','./src/main.js']
-  },
+  // 默认cli创建的单入口，现在要改成多入口
+  // entry: {
+  //   app: ['babel-polyfill','./src/main.js']
+  // },
+  entry:entries,
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -41,7 +45,8 @@ module.exports = {
   },
   module: {
     rules: [
-      ...(config.dev.useEslint ? [createLintingRule()] : []),
+      // eslint校验
+      // ...(config.dev.useEslint ? [createLintingRule()] : []),
       {
         test: /\.vue$/,
         loader: 'vue-loader',

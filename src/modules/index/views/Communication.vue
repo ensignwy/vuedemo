@@ -1,4 +1,4 @@
-<style scope src="../assets/css/index.css"></style>
+<style scope src="../../../assets/css/index.css"></style>
 
 <template>
   <section class="todoapp">
