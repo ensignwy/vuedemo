@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import AdminHome from '@/components/layout/SidebarLayout'
+// import AdminHome from '@/components/layout/SidebarLayout'
+import AdminHome from '@/modules/admin/views/Home'
 import NotFound from '@/components/layout/NotFound'
 import Index from '@/modules/admin/views/Index'
 

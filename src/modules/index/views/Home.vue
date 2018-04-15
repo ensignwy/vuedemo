@@ -22,6 +22,11 @@
         </router-link>
       </li>
       <li>
+        <router-link to="loadmore" class="el-button el-button-info">
+          <span>上拉加载更多组件</span>
+        </router-link>
+      </li>
+      <li>
         <a href="javascript:void(0)" @click="toAdmin" class="el-button el-button-info">
           <span>后台管理</span>
         </a>

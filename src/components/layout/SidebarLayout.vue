@@ -1,9 +1,8 @@
 <template>
   <div class="wrapper">
-    <!--父组件向子组件传递数据collapsed-->
     <main-header></main-header>
     <div class="content-wrapper">
-      <main-sidebar></main-sidebar>
+      <main-sidebar :menus="menus"></main-sidebar>
       <div class="content" :class="collapsed?'content-expanded':'content-collapsed'">
         <transition name="move" mode="out-in">
           <router-view></router-view>
@@ -17,9 +16,10 @@
   import MainSidebar from './MainSidebar'
   import Bus from './bus'
   export default{
+    props:['menus'],
     data(){
       return {
-        collapsed:false
+        collapsed:false,
       }
     },
     components: {

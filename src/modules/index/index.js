@@ -5,8 +5,11 @@ import App from './App'
 import router from '../../router/routerIndex'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import 've-ui/packages/theme/touch-screen-global.css'
+import VeUI from 've-ui'
 
 Vue.use(ElementUI)
+Vue.use(VeUI)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
