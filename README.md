@@ -3,6 +3,7 @@
 > 一个vue的例子，从开始学习到进阶。
 >
 > 更新2018-04-10：多页面，多路由
+> 更新2018-05-15：后台管理系统
 >
 > 场景：现在的系统日趋复杂，一个单页应用对于复杂的系统来说有点不好维护，而且从逻辑上来讲也该将不同的子系统以区分开，最简单的就是，基本上一个系统分为后台管理系统和业务展示系统，这样的场景下的架构方案可以做成多页应用，多路由，互不干扰。
 >
@@ -15,6 +16,7 @@
 ``` bash
 # install dependencies
 npm install
+npm install git+https://github.com/ensignwy/VE-UI.git
 
 # serve with hot reload at localhost:8080
 npm run dev

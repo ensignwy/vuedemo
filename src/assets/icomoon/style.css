@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?mv1ewv');
+  src:  url('fonts/icomoon.eot?mv1ewv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mv1ewv') format('truetype'),
+    url('fonts/icomoon.woff?mv1ewv') format('woff'),
+    url('fonts/icomoon.svg?mv1ewv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="el-icon-ht-"], [class*=" el-icon-ht-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-ht-location:before {
+  content: "\e915";
+  color: #fff;
+}
+.el-icon-ht-notify:before {
+  content: "\e914";
+  color: #fff;
+}
+.el-icon-ht-low-red .path1:before {
+  content: "\e90e";
+  color: rgb(222, 222, 222);
+}
+.el-icon-ht-low-red .path2:before {
+  content: "\e90f";
+  margin-left: -0.5830078125em;
+  color: rgb(247, 107, 105);
+}
+.el-icon-ht-low:before {
+  content: "\e910";
+  color: #dedede;
+}
+.el-icon-ht-stock-in:before {
+  content: "\e911";
+  color: #fff;
+}
+.el-icon-ht-scan:before {
+  content: "\e912";
+  color: #fff;
+}
+.el-icon-ht-operation:before {
+  content: "\e913";
+  color: #fff;
+}
+.el-icon-ht-提示:before {
+  content: "\e919";
+  color: #409eff;
+}
+.el-icon-ht-back2:before {
+  content: "\e91a";
+  color: #666;
+}
+.el-icon-ht-returned:before {
+  content: "\e93f";
+  color: #fff;
+}
+.el-icon-ht-完成:before {
+  content: "\e91c";
+  color: #67c23a;
+}
+.el-icon-ht-no-wify2:before {
+  content: "\e91d";
+  color: #f56c6c;
+}
+.el-icon-ht-stock-out:before {
+  content: "\e91e";
+  color: #fff;
+}
+.el-icon-ht-hign:before {
+  content: "\e91f";
+  color: #dcdfe6;
+}
+.el-icon-ht-high-red .path1:before {
+  content: "\e920";
+  color: rgb(220, 223, 230);
+}
+.el-icon-ht-high-red .path2:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(247, 107, 105);
+}
+.el-icon-ht-错误:before {
+  content: "\e922";
+  color: #f56c6c;
+}
+.el-icon-ht-ticket:before {
+  content: "\e923";
+  color: #97a7b8;
+}
+.el-icon-ht-弹窗叉号:before {
+  content: "\e924";
+  color: #cbd3db;
+}
+.el-icon-ht-登录错误:before {
+  content: "\e925";
+  color: #f56c6c;
+}
+.el-icon-ht-position:before {
+  content: "\e926";
+  color: #fff;
+}
+.el-icon-ht-user-info:before {
+  content: "\e927";
+  color: #44a2fb;
+}
+.el-icon-ht-关灯:before {
+  content: "\e928";
+  color: #409eff;
+}
+.el-icon-ht-box:before {
+  content: "\e929";
+  color: #fff;
+}
+.el-icon-ht-container:before {
+  content: "\e92a";
+  color: #c1c8cf;
+}
+.el-icon-ht-警告:before {
+  content: "\e92b";
+  color: #e6a23c;
+}
+.el-icon-ht-开灯:before {
+  content: "\e92c";
+  color: #409eff;
+}
+.el-icon-ht-open-door:before {
+  content: "\e92d";
+  color: #fff;
+}
+.el-icon-ht-male:before {
+  content: "\e92e";
+  color: #409eff;
+}
+.el-icon-ht-female:before {
+  content: "\e92f";
+  color: #f89789;
+}
+.el-icon-ht-log-progress:before {
+  content: "\e930";
+  color: #44a2fb;
+}
+.el-icon-ht-table-finished:before {
+  content: "\e931";
+  color: #409eff;
+}
+.el-icon-ht-computer:before {
+  content: "\e932";
+  color: #fff;
+}
+.el-icon-ht-eye-close:before {
+  content: "\e903";
+  color: #bbc8d4;
+}
+.el-icon-ht-user2:before {
+  content: "\e904";
+  color: #bbc8d4;
+}
+.el-icon-ht-eye-open:before {
+  content: "\e905";
+  color: #bbc8d4;
+}
+.el-icon-ht-back:before {
+  content: "\e906";
+  color: #008dff;
+}
+.el-icon-ht-lock2:before {
+  content: "\e907";
+  color: #bbc8d4;
+}
+.el-icon-ht-no-wify .path1:before {
+  content: "\e908";
+  color: rgb(195, 210, 224);
+}
+.el-icon-ht-no-wify .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(195, 210, 224);
+}
+.el-icon-ht-no-wify .path3:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(195, 210, 224);
+}
+.el-icon-ht-no-wify .path4:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(245, 108, 108);
+}
+.el-icon-ht-key:before {
+  content: "\e90c";
+  color: #3a9bff;
+}
+.el-icon-ht-wify:before {
+  content: "\e90d";
+  color: #44a2fb;
+}
+.el-icon-ht-lock:before {
+  content: "\e900";
+  color: #ccd5db;
+}
+.el-icon-ht-user:before {
+  content: "\e901";
+  color: #ccd5db;
+}
+.el-icon-ht-error:before {
+  content: "\e902";
+  color: #fe1919;
+}

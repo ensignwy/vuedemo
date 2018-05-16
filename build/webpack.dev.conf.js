@@ -9,7 +9,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
-const mockMap = require('./mock-map')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -52,6 +51,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
     new webpack.NoEmitOnErrorsPlugin(),
+
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      jquery: "jquery",
+      "window.jQuery": "jquery",
+    }),
 
     // 原本的单页应用的，现在改为多页了
     // https://github.com/ampedandwired/html-webpack-plugin
@@ -98,10 +104,10 @@ module.exports = new Promise((resolve, reject) => {
   })
 })
 
-var pages =  utils.getMultiEntry('./src/'+config.moduleName+'/**/*.html');
-for (var pathname in pages) {
+let pages =  utils.getMultiEntry('./src/'+config.moduleName+'/**/*.html');
+for (let pathname in pages) {
   // 配置生成的html文件，定义路径等
-  var conf = {
+  let conf = {
     filename: pathname + '.html',
     template: pages[pathname], // 模板路径
     chunks: [pathname, 'vendors', 'manifest'], // 每个html引用的js模块

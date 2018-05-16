@@ -5,7 +5,7 @@ import Login from '@/modules/index/views/Login'
 import Communication from '@/modules/index/views/Communication'
 import GetData from '@/modules/index/views/GetData'
 import Tantan from '@/modules/index/views/Tantan'
-import NotFound from '@/components/layout/NotFound'
+import NotFound from '@/components/NotFound'
 import LoadMore from '@/modules/index/views/LoadMore'
 
 Vue.use(Router)
