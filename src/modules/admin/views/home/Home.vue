@@ -11,7 +11,7 @@
       return {
         menus: [],
         headerProps: {
-          username: '',
+          username: 'ensign',
           name: '后台管理系统',
           shortName: 'Admin'
         }
@@ -26,6 +26,7 @@
 
       // 获取当前用户
       userApi.getCurrentUser().then(json => {
+        debugger
         if (json){
           let username = json.lastName + json.firstName
           this.headerProps.username = username

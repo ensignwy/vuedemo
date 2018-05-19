@@ -4,6 +4,7 @@
 >
 > 更新2018-04-10：多页面，多路由
 > 更新2018-05-15：后台管理系统
+> 更新2018-05-19: 使用mock模拟数据
 >
 > 场景：现在的系统日趋复杂，一个单页应用对于复杂的系统来说有点不好维护，而且从逻辑上来讲也该将不同的子系统以区分开，最简单的就是，基本上一个系统分为后台管理系统和业务展示系统，这样的场景下的架构方案可以做成多页应用，多路由，互不干扰。
 >
@@ -36,5 +37,9 @@ npm run e2e
 # run all tests
 npm test
 ```
+## 页面
+![](https://raw.githubusercontent.com/ensignwy/markdown-images/master/vuedemo/menu.jpg)
+
+![](https://raw.githubusercontent.com/ensignwy/markdown-images/master/vuedemo/user.jpg)
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

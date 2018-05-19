@@ -13,14 +13,18 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target:'http://127.0.0.1:9090/api/',
+        // 真实的java后台接口地址
+        // target:'http://127.0.0.1:9090/api/',
+        // mock模拟的数据接口地址
+        target:'http://127.0.0.1:8002/api/',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '',
         }
       },
       '/account': {
-        target:'http://127.0.0.1:9090/account/',
+        // target:'http://127.0.0.1:9090/account/',
+        target:'http://127.0.0.1:8002/account/',
         changeOrigin: true,
         pathRewrite: {
           '^/account': '',
