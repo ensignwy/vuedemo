@@ -7,16 +7,6 @@
         </router-link>
       </li>
       <li>
-        <router-link to="communication" class="el-button el-button-info">
-          <span>跨组件通信</span>
-        </router-link>
-      </li>
-      <li>
-        <router-link to="getData" class="el-button el-button-info">
-          <span>mock模拟数据</span>
-        </router-link>
-      </li>
-      <li>
         <router-link to="tantan" class="el-button el-button-info">
           <span>探探层叠滑动</span>
         </router-link>
